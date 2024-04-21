@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template
 import joblib
 import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
 
 # Load the trained model
 with open('random_forest_model(2).joblib','rb') as f:
