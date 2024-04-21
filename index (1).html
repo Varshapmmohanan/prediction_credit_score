@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Score Prediction</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body style="background-image: url('static/6036940.jpg');">
+    <div class="container">
+        <h2>Credit Score Prediction</h2>
+        <form action="/predict" method="post">
+            <label for="Age">Age:</label><br>
+            <input type="number" id="Age" name="Age" required><br><br>
+            
+            <label for="Annual_Income">Annual Income:</label><br>
+            <input type="number" id="Annual_Income" name="Annual_Income" required><br><br>
+            
+            <label for="Num_of_Delayed_Payment">Number of Delayed Payments:</label><br>
+            <input type="number" id="Num_of_Delayed_Payment" name="Num_of_Delayed_Payment" required><br><br>
+            
+            <label for="Total_Num_Credit_Products">Total Number of Credit Products:</label><br>
+            <input type="number" id="Total_Num_Credit_Products" name="Total_Num_Credit_Products" required><br><br>
+            
+            <label for="Outstanding_Debt">Outstanding Debt:</label><br>
+            <input type="number" id="Outstanding_Debt" name="Outstanding_Debt" required><br><br>
+            
+            <button type="submit">Predict Credit Score</button>
+        </form>
+    </div>
+</body>
+</html>
